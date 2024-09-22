@@ -1,0 +1,52 @@
+#carouselExampleAutoplaying{
+    max-width: 800px;
+    width: 100%;
+    border: 2px dashed midnightblue ;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#imagemCarrossel{
+    width:100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+}
+#central{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+@media (max-width: 768px) {
+    #carouselExampleAutoplaying {
+        width: 100%; /* O carrossel ocupará toda a largura disponível */
+        max-width: 600px; /* Limita a largura máxima a 600px */
+    }
+
+    #imagemCarrossel {
+        max-width: 600px; /* Ajusta a largura máxima da imagem */
+        height:400px; /* Ajusta a altura automaticamente */
+    }
+}
+
+/* Media query para telas muito pequenas, como smartphones */
+@media (max-width: 480px) {
+    #carouselExampleAutoplaying {
+        width: 100%; /* O carrossel ocupará toda a largura disponível */
+        max-width: 100%; /* Remove qualquer limite de largura para telas muito pequenas */
+    }
+
+    #imagemCarrossel {
+        max-width: 100%; /* A imagem ocupará 100% da largura */
+        height: 300px; /* A altura será ajustada automaticamente */
+    }
+}

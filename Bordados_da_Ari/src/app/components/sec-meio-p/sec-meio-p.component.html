@@ -1,0 +1,21 @@
+<hr>
+<div class="container-fluid" id="centro">
+<h5>Mais que Bordados, <strong>Obras de Arte !</strong></h5>
+<p>Desvende o universo das possibilidades com nossos bordados personalizados.</p>
+<p>Nossos bordados artesanais são feitos com amor e dedicação,Cada ponto é feito à mão, com fios de alta qualidade, garantindo durabilidade e sofisticação.</p>
+<p>Presenteie alguém especial com um bordado personalizado. A emoção é garantida!</p>
+</div>
+<mat-accordion>
+    <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)">
+      <mat-expansion-panel-header>
+        <mat-panel-title id="center_txt">Confira nossos Produtos</mat-panel-title>
+      </mat-expansion-panel-header>
+      <div class="container-fluid" id="centro">
+        <div class="container-fluid" id="row">
+          <app-card-p *ngFor ="let prod of prodList" [prodData]="prod"></app-card-p>
+
+        </div>
+      </div>
+      
+    </mat-expansion-panel>
+  </mat-accordion>

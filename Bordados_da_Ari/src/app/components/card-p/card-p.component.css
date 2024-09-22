@@ -1,0 +1,26 @@
+.example-card {
+    max-width: 400px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 16px;
+  }
+  .card-image{
+    width: 100%; /* Imagem ocupa toda a largura do card */
+    height: 200px; /* Altura fixa para todas as imagens */
+    object-fit: cover; /* Ajusta a imagem sem distorcer */
+  }
+  
+  .example-header-image {
+    background-image: url('/assets/images/LOGOARI.png');
+    background-size: cover;
+  }
+  mat-card{
+    border: 3px solid cadetblue;
+  }
+  mat-card-actions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

@@ -1,0 +1,66 @@
+#centro{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: justify;
+    align-items: center;
+    
+}
+#row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: justify;
+    align-items: center;
+    gap: 16px; 
+}
+mat-accordion{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border:2px solid midnightblue  ;
+    border-radius:  15px ;
+}
+mat-expansion-panel{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: lightslategray ;
+}
+mat-expansion-panel-header, mat-panel-title {
+    justify-content: center;
+    align-items: center;
+
+}
+#center_txt{
+    font-size: larger;
+    font-weight: bold;
+
+}
+app-card-p {
+    flex: 1 1 400px; /* O card ocupará 300px e se ajustará conforme o espaço disponível */
+    max-width: 400px;
+    margin-bottom: 16px; /* Espaçamento inferior entre os cards */
+  }
+
+/* Media query para telas menores */
+@media (max-width: 768px) {
+    app-card-p {
+      flex: 1 1 100%; /* Cards ocuparão 100% da largura */
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    app-card-p {
+      flex: 1 1 45%; /* Dois cards por linha */
+    }
+  }
+  
+  @media (min-width: 1025px) {
+    app-card-p {
+      flex: 1 1 30%; /* Três cards por linha */
+    }
+  }
+  

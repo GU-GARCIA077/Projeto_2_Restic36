@@ -1,0 +1,17 @@
+<mat-card class="example-card" appearance="outlined">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>{{prodData.titulo}}</mat-card-title>
+      <mat-card-subtitle>{{prodData.subtitulo}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image [src]="prodData.image" alt="conjunto de toalhas" class="card-image">
+    <mat-card-content>
+      <p>
+        {{prodData.descricao}} 
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <a [routerLink]="['/detalhes',prodData.id]">SAIBA MAIS</a>
+    </mat-card-actions>
+  </mat-card>
+  
