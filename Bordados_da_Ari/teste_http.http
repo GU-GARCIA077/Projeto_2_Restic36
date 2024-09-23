@@ -1,0 +1,57 @@
+### Requisição GET
+GET  http://localhost:3000/produtos HTTP/1.1
+Content-Type:  application/json
+
+### Requisição GET com parâmetros
+GET  http://localhost:3000/produtos/7 HTTP/1.1
+Content-Type:  application/json
+
+### Requisição POST 
+POST  http://localhost:3000/produtos
+Content-Type: application/json
+
+{
+    "id": 8,
+    "titulo": "HTTP TESTE e exclusao",
+    "subtitulo": "post para deletar",
+    "image": "/assets/images/panoPrato.png",
+    "descricao": "Lindos panos de prato bordados em ponto cruz ! Personalizado como o cliente desejar.Garanta já o seu ,faça-nos uma encomenda.",
+    "valor": 1000
+}
+
+### Requisição de alteração de dados (PUT)
+PUT  http://localhost:3000/produtos/7
+Content-Type: application/json
+
+{
+    "id": 7,
+    "titulo": "HTTP TESTE ATUALIZADO",
+    "subtitulo": "post de ATUALIZAÇÃO",
+    "image": "/assets/images/panoPrato.png",
+    "descricao": "Lindos panos de prato bordados em ponto cruz ! ",
+    "valor": 1000
+}
+
+### REquisição de alteração de dados de apenas um campo :
+PATCH http://localhost:3000/produtos/7
+Content-Type: application/json
+
+{
+    "valor": 5000
+}
+
+### Excluir um registro:
+DELETE http://localhost:3000/produtos/8
+Content-Type: application/json
+
+### filtros :
+GET http://localhost:3000/produtos?titulo=QuadroDecorativo HTTP/1.1
+Content-Type: application/json
+
+### Paginação:
+GET http://localhost:3000/produtos?_page=1&_limit=3 HTTP/1.1
+Content-Type: application/json
+
+###Ordenação:
+GET http://localhost:3000/produtos/?_sort=titulo&_order=desc HTTP/1.1
+Content-Type: application/json

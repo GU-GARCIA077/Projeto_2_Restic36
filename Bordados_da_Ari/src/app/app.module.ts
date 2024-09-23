@@ -11,6 +11,15 @@ import { SecMeioPComponent } from './components/sec-meio-p/sec-meio-p.component'
 import { CardPComponent } from './components/card-p/card-p.component';
 import { DetalhesComponent } from './pages/detalhes/detalhes.component';
 import { HomeComponent } from './pages/home/home.component';
+import { LocalizacaoComponent } from './components/localizacao/localizacao.component';
+import { ContatosComponent } from './components/contatos/contatos.component';
+import { RodapeComponent } from './components/rodape/rodape.component';
+import { NewsletterComponent } from './components/newsletter/newsletter.component';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { FormControl, FormGroupDirective, FormsModule, NgForm, ReactiveFormsModule, Validators } from '@angular/forms';
+import { MatIconModule } from '@angular/material/icon';
+import { ErrorStateMatcher } from '@angular/material/core';
 
 @NgModule({
   declarations: [
@@ -20,6 +29,10 @@ import { HomeComponent } from './pages/home/home.component';
     SecMeioPComponent,
     DetalhesComponent,
     HomeComponent,
+    LocalizacaoComponent,
+    ContatosComponent,
+    RodapeComponent,
+    NewsletterComponent,
   
   ],
   imports: [
@@ -29,7 +42,9 @@ import { HomeComponent } from './pages/home/home.component';
     MatCard,
     MatCardModule,
     CardPComponent,
-
+    FormsModule,
+    ReactiveFormsModule,
+  
   ],
   providers: [
     provideClientHydration(),

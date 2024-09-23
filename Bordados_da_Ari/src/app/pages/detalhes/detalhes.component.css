@@ -1,66 +1,79 @@
-/*detalhes*/
-.details{
+#centro {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: center; 
+    align-items: center;
+    justify-items: center;     
+    flex-direction: column; 
+    padding: 20px; 
 }
 
-.label{
-    display: flex;
-    flex-direction: row;
-    
+.card {
+    max-width: 700px;        
+    width: 100%;              
+    background-color: #f7f3e9; 
+    border-radius: 10px; 
+    border: 2px solid midnightblue;     
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    margin: 20px;  
 }
 
-.label-texto{
-    font-size: medium;
-    font-weight: 800;
-    padding: 5px;
-    width: 20%;    
+.image {
+    max-width: 100%;           
+    height:300px;             
+    border-radius: 10px;       
 }
 
-.titulo-normal{
-    font-size: medium;
-    font-weight: 400;
-    padding: 5px;
-    width: 80%;
+.card-title, .card-text {
+    margin-bottom: 15px;       
 }
 
-.info{
-    display: flex;
-    flex-direction: column;
-    padding-left: 10px;
-    border-top: 1px solid blueviolet;
-    border-right: 1px solid blueviolet;
-    border-bottom: 1px solid blueviolet;
-    background-color: rgb(240, 231, 248);
-    border-radius: 0 15px 15px 0;
+.btn-outline-info {
+    padding: 10px 20px;       
+    border-radius: 5px;        
 }
 
-.image{
-    border: 1px solid blueviolet;
-    width: 400px;
+.card-footer {
+    font-size: 0.9rem;        
+    color: #6c757d;            
 }
 
-/*Forms*/
-.form{
-    display: flex;
-    flex-direction: column;
-    
+/* Responsividade */
+@media (max-width: 1200px) {
+    .card {
+        max-width: 80%;        /* Em telas grandes, ocupa 80% da tela */
+    }
+    .image {
+        max-width: 80%;
+    }
 }
 
-input{
-    border-radius: 3px;
-    border-color: rgb(192, 141, 239);
-    height: 40px;
-    width: 300px;
-    outline: 0;
-    font-size: x-large;
+@media (max-width: 992px) {
+    .card {
+        max-width: 70%;        /* Em telas médias, ocupa 70% da tela */
+    }
+    .image {
+        max-width: 70%;
+    }
 }
 
+@media (max-width: 768px) {
+    .card {
+        max-width: 90%;        /* Em tablets, ocupa 90% da tela */
+    }
+    .image {
+        max-width: 90%;
+    }
+}
 
-.primary {
-    background-color: white;
-    height: 40px;
-    width: 100px;
-    margin-top: 10px;
+@media (max-width: 576px) {
+    .card {
+        max-width: 100%;       /* Em smartphones, ocupa 100% da tela */
+    }
+
+    .btn-outline-info {
+        width: 100%;           /* Botão ocupa toda a largura */
+    }
+    .image {
+        max-width: 100%;
+    }
 }

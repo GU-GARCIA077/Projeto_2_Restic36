@@ -27,7 +27,7 @@ mat-expansion-panel{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    background-color: lightslategray ;
+    background-color: rgb(112, 152, 192) ;
 }
 mat-expansion-panel-header, mat-panel-title {
     justify-content: center;

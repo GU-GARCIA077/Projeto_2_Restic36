@@ -1,14 +1,16 @@
-<h3 class="titulo">{{prod?.titulo}}</h3>
-<section class="details">
-    <img [src]="prod?.image" alt="" class="image">
-    <section class="info">
-        <section class="label">
-            <p class="label-texto">Descrição:</p>
-            <p class="titulo-normal">{{prod?.descricao}}</p>
-        </section>
-        <section class="label">
-            <p class="label-texto">Valor:</p>
-            <p class="titulo-normal">{{prod?.valor}}</p>
-        </section>
-    </section>
-</section>
+<div class="container-fluid" class="container-fluid d-flex justify-content-center align-items-center" style="height: 100vh;">
+    <div class="card text-center" >
+        <div class="card-header">
+            <img [src]="prod?.image" alt="" class="image">
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">{{prod?.titulo}}</h5>
+            <p class="card-text">{{prod?.descricao}}</p>
+            <p class="card-text"><b>Valor</b> :<u>{{prod?.valor}} Reais</u></p>
+            <a href="#" class="btn btn-outline-info">Encomendar</a>
+        </div>
+        <div class="card-footer text-body-secondary">
+            Verificar disponibilidade na encomenda
+        </div>
+    </div>
+</div>

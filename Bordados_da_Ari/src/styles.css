@@ -2,8 +2,21 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; 
-background-color:cadetblue ;
+background-color:rgb(165, 165, 239) ;
 }
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+::-webkit-scrollbar {
+    width:15px;
+    height: 5px;
+    }
+::-webkit-scrollbar-track {
+    background:linear-gradient(45deg, floralwhite,midnightblue);
+    }
+::-webkit-scrollbar-thumb {
+    background:linear-gradient(45deg,midnightblue , floralwhite);
+    border:1px solid black;
+    border-radius: 5px;
+    }

@@ -1,0 +1,41 @@
+#centraliza{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 55%;
+    margin-top: 0;
+}
+#mapa{
+    width: 100%;
+    max-width:800px ;
+    height: 500px;
+    border-radius:5px ;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+#gmaps{
+    min-width:700px; 
+    height:300px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid midnightblue;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 768px) {
+    #gmaps {
+        min-width: 300px; /* Reduz a altura para telas menores */
+    }
+}
+
+@media (max-width: 576px) {
+    #gmaps {
+        width: 200px; /* Reduz ainda mais em telas muito pequenas */
+    }
+}

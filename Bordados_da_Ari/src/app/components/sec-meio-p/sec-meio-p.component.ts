@@ -17,7 +17,9 @@ export class SecMeioPComponent implements OnInit {
   prodService: ProdutosSrvService = inject(ProdutosSrvService);
 
   constructor(){
-    this.prodList =this.prodService.getAllProd();
+    this.prodService.getAllProd().then((prodList=>{
+      this.prodList= prodList;
+    }));
   }
   ngOnInit(): void {}
 }

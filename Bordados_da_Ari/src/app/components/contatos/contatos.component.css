@@ -1,0 +1,28 @@
+.nav-link:link{
+    color:midnightblue ;
+}
+.nav-link:active{
+    color: midnightblue;
+}
+   
+.nav-link:hover{
+    color: darkslateblue;
+}
+.nav-link:visited{
+    color: darkslateblue ;
+}
+.centro{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.redes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 20px;
+}

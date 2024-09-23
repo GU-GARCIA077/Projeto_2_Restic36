@@ -1,0 +1,33 @@
+<div class="centraliza">
+    <h5>NewsLetter:</h5>
+    <p>Preencha o formulário e fique por dentro das novidades!</p>
+    <form (ngSubmit)="onSubmit()" [formGroup]="newsForm" #formDir="ngForm" >
+        <fieldset>
+           <div class="form-group">
+                <Label for="Nome">Nome:</Label>
+                <input type="text" name="" id="" placeholder="Digite seu nome" formControlName="name" required>
+                <div *ngIf="newsForm.get('name').invalid && newsForm.get('name').touched">
+                    O nome é obrigatório
+                </div>
+            </div>
+           <div class="form-group">
+                <Label for="email">Email:</Label>
+                <input type="email" name="" id="" placeholder="Insira um email" formControlName="mail" required>
+                <div *ngIf="newsForm.get('email').invalid && newsForm.get('email').touched">
+                    O email inválido
+                </div>
+            </div>
+           <div class="form-group">
+                <label for="">Telefone para contato:</label>
+                <input type="tel" name="" id="" placeholder="(77)9XXXX-XXXX" formControlName="tel" required>
+                <div *ngIf="newsForm.get('tel').invalid && newsForm.get('tel').touched">
+                    O telefone é obrigatório
+                </div>
+            </div>
+            <button type="submit" [disabled]="newsForm.valid">Enviar</button>
+        </fieldset>
+    </form>
+        
+
+
+</div>
